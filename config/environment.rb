@@ -5,7 +5,7 @@ require_relative 'application'
 Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => ENV['SENDGRID_LOGIN'],
+  :user_name => 'apikey',
   # Source : https://stackoverflow.com/questions/30226176/ruby-on-rails-bad-username-password-535-auth-failed
   # :user_name => 'apikey',
   :password => ENV['SENDGRID_PWD'],
